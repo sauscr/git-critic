@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gcritic"
+version = "0.1.0"
+description = "Консольный git-клиент с ИИ-ревью в стиле StopGame"
+requires-python = ">=3.15,<3.16"
+dependencies = ["gcritic-core", "gcritic-git", "gcritic-critic", "gcritic-stats", "gcritic-tui"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gcritic"]
+
+[project.scripts]
+gcritic = "gcritic.__main__:main"
+

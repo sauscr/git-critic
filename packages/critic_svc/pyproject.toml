@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gcritic-critic"
+version = "0.1.0"
+description = "gcritic: ИИ-ревью через OpenAI"
+requires-python = ">=3.15,<3.16"
+dependencies = ["gcritic-core", "openai>=1.40"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gcritic_critic"]
