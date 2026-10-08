@@ -79,9 +79,9 @@ git_critic/
      → `uv tool install gcritic` / `pipx install gcritic` на любой ОС;
    - Windows: пакет Chocolatey `gcritic` (`choco install gcritic`): nuspec + `chocolateyinstall.ps1`
      ставит uv и вызывает `uv tool install gcritic`; модерация community-репозитория ~дни;
-     одной строкой без choco: `irm https://raw.githubusercontent.com/<user>/git_critic/main/install.ps1 | iex`;
+     одной строкой без choco: `irm https://raw.githubusercontent.com/sauscr/git-critic/main/install.ps1 | iex`;
    - Linux/macOS: `install.sh` (готов, ставит из клона), одной строкой:
-     `curl -LsSf https://raw.githubusercontent.com/<user>/git_critic/main/install.sh | sh`;
+     `curl -LsSf https://raw.githubusercontent.com/sauscr/git-critic/main/install.sh | sh`;
      дальше — AUR (`gcritic`), Homebrew tap, .deb через GitHub Releases;
    - Python 3.15 сейчас rc: до финала 3.15 uv скачивает rc сам, у кентов ничего ставить не нужно.
    Опционально: `.exe`-установщик (PyInstaller + Inno Setup).

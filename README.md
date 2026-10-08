@@ -10,13 +10,13 @@
 Windows (PowerShell):
 
 ```powershell
-git clone https://github.com/sauscr/git_critic; cd git_critic; .\install.ps1
+git clone https://github.com/sauscr/git-critic; cd git-critic; .\install.ps1
 ```
 
 Linux / macOS:
 
 ```sh
-git clone https://github.com/sauscr/git_critic && cd git_critic && ./install.sh
+git clone https://github.com/sauscr/git-critic && cd git-critic && ./install.sh
 ```
 
 Установщик сам поставит [uv](https://docs.astral.sh/uv/) и Python 3.15. Дальше в любой папке: `gcritic`.
